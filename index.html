@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour blog</title>
+    <link rel="stylesheet"media="screen and (max-width: 1170px)" href="phone.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar{
+            display: flex;
+            position: absolute;
+            
+        }
+      
+
+       
+        #navbar ul {
+            display: flex;
+            margin: 20px;
+            
+
+        }
+        #navbar ul li{
+            list-style: none;
+
+        }
+        #navbar ul li a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            
+            font-weight: bold;
+
+        }
+        /* Home Section  */
+       #home{
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3px 200px;  
+            height: 400px;      
+       }
+       #home::before{
+        content: "";
+        background: url('img/hd-wallpaper-gfcae40657_1920.jpg') no-repeat center center/cover;
+        position: absolute;
+        height: 70%;
+        width: 100%;
+        z-index: -1;
+        
+        
+       }
+       #home .primary{
+        font-size: 3rem;
+        color: white;
+        margin: 60px;
+        
+       }
+       #home p{
+        
+        color:blue;
+        font-size: 22px;
+       }
+       #city{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 44px 0px 15px 0px;
+        
+       }
+       #city .box{
+        
+        display: flex;
+       }
+       #city .box .one{
+        padding: 3px 90px;
+       }
+       #city .box .one p{
+        opacity: 0.3;
+        
+       }
+       
+       hr{
+        opacity: 0.3;
+       }
+       #naam{
+        display: flex;
+        margin: 40px 40px 5px 40px;
+
+        
+
+       }
+       #naam .container{
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+
+        
+       }
+       #naam .container img{
+        width: 300px;
+        padding: 3px 10px;
+
+       }
+       .sam .des{
+        font-weight: bold;
+       }
+       .sam p{
+        padding: 3px;
+       }
+
+       #search{
+        height: 70px;
+        background-color: black;
+        color: white;
+       }
+       .sea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 30px;
+       }
+       .sea p{
+        border: 2px solid white;
+        padding: 5px 30px 5px 5px;
+       }
+
+       #contact{
+        position: relative;
+
+       }
+       #contact::before{
+        content: "";
+        position: absolute;
+        background: url('img/blue-sky-backgrounds.jpg') no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.8;
+
+       }
+       .contact-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 34px;
+       }
+       .contact-box form{
+        width: 40%;
+       }
+       .contact-box label{
+        font-size: 1.3rem;
+        
+       }
+       .contact-box input,
+       .contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 9px;
+        font-size: 1.1rem;
+       }
+       #contact .con{
+        text-align: center;
+        padding: 8px;
+       }
+       footer{
+        background-color: black;
+        color: white;
+        padding: 9px 20px;
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+       }
+     
+       
+
+    </style>
+</head>
+<body>
+       <nav id="navbar">
+        <ul>
+            <li class="item"> <a href="#">DESTINATIONS</a> </li>
+            <li class="item"> <a href="#">TRAVEL BLOG</a> </li>
+            <li class="item"> <a href="#">TRAVEL ADVICE</a> </li>
+            <li class="item"> <a href="#">GEAR REVIEWS</a> </li>
+            <li class="item"> <a href="#">ABOUT</a> </li>
+            <li class="item"> <a href="#">BOOK</a> </li>
+        </ul> 
+       </nav>
+       <section id="home">
+        <h1 class="primary">WELCOME</h1>
+        <p>Indie Traveller is all about travelling adventurously around the world.</p>
+        <p>No sponsored trip, just real travel tips.</p>
+       </section>
+
+       <section id="city">
+        <div class="box">
+        <div class="one">
+        <p>FEATURED TRIP</p>
+        <h3>ANDALUCIA, SPAIN</h3>
+         </div>
+         <div class="one">
+            <p>BEFORE YOU TRAVEL</p>
+            <h3>MY TRAVEL CHECKLIST</h3>
+         </div>
+         <div class="one">
+            <p>TRAVEL ESSENTIALS</p>
+            <h3>TOP APPS & RESOURCES I USE</h3>
+         </div>
+         </div>
+       </section>
+       <hr>
+       <section id="naam">
+        <div class="container">
+            <div class="sam">
+            <p>EXPLORE</p>
+            <p class="des"> DESTINATIONS</p>
+            <P>Dig into our down-to-Earth budget travel guides from around the world, filled with itinerary ideas, travel tips, and recommendations for places to go.</P>
+            </div>
+            <img src="img/city.jpg.jpg" alt="hello.com">
+            <img src="img/moshko.jpg.jpg" alt="hello.com">
+        </div>
+
+       </section>
+       <hr>
+       <section id="search">
+        <div class="sea">
+            <h4>Where You Want To go</h4>
+            <p class="border">where to go</p>
+            <input type="date" name="date" id="date">
+            <select name="sel" id="sel">
+                <option value="">travel Type</option>
+                <option value="family">family</option>
+                <option value="single">single</option>
+                <option value="couple">couple</option>
+            </select>
+            <button class="btn">Search</button>
+        </div>
+       </section>
+        <section id="contact">
+        <h1 class="con">CONTACT US</h1>
+        <div class="contact-box">
+            <form action="#">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number:</label>
+                    <input type="number" name="number" id="number" placeholder="Enter your Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="submit" name="submit" id="submit">
+                </div>
+            </form>
+        </div>
+       
+       </section>
+       <footer>
+        <div class="center">
+            Copyright &copy; www.tourblog.com| All rights reseverd
+        </div>
+       </footer>
+</body>
+</html>
